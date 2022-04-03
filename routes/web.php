@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/welcome.blade.php', function () {
     return view('welcome');
 
     //return 'Minha primeira rota';
@@ -22,10 +22,20 @@ Route::get('/', function () {
 
 });
 
-Route::get('/contato', function(){
-    return view('contato');
+
+Route::get('/doe.blade.php', function(){
+    return view('doe');
 });
 
-Route::get('/quemsomos', function(){
-    return view('quemsomos');
+
+Route::get('/login.blade.php', function(){
+    return view('login');
+});
+
+Route::get('/cadastro.blade.php', function(){
+    return view('cadastro');
+});
+
+Route::get('/adote.blade.php', function(){
+    return view('adote');
 });
