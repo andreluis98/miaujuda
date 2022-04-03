@@ -40,10 +40,10 @@
             <div class="collapse navbar-collapse" id="navegacao">
                 <ul class="navbar-nav ml-auto mr-5">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="welcome.blade.php" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="doe.html" class="nav-link ">Doe Amor</a>
+                        <a href="doe.blade.php" class="nav-link ">Doe Amor</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -56,13 +56,13 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="area_aluno.html" class="nav-link">Login</a>
+                        <a href="login.blade.php" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="cadastro.html" class="nav-link">Cadastre-se</a>
+                        <a href="cadastro.blade.php" class="nav-link">Cadastre-se</a>
                     </li>
                     <li class="nav-item">
-                        <a href="adote.html" class="nav-link">Adote</a>
+                        <a href="adote.blade.php" class="nav-link">Adote</a>
                     </li>
     
                 </ul>

@@ -22,7 +22,80 @@
         crossorigin="anonymous"></script>
         
         <link rel="stylesheet" href="style/style.css" type="text/css"/>
-    
+    <style>
+        /*Redefinir padroes d ecores do nav do bootstrap*/
+.active{
+    background-color: #007bff;
+}
+
+.nav-link, .dropdown-item{
+    color: white !important;
+}
+.nav-link:hover:not(.active), .dropdown-item:hover{
+    background-color: #7952b3;
+    color: white !important;
+}
+
+.bg-imagem{
+    /* para manter a responsividade do viewport */
+    height: 48vw;
+    background-image: url(https://caes101.files.wordpress.com/2012/09/cao-gato.jpg);
+    /* Cover define que a imagem de fundo será ajustada para cobrir a área do container*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-imagem p{
+    text-shadow: 4px 4px 8px black;
+    /* para manter a responsividade utilizamos o viewport*/
+    font-size: 4vw;
+}
+
+.bg-imagem-doe{
+    /* para manter a responsividade do viewport */
+    height: 48vw;
+    background-image: url(https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2020/04/17/825933/20200417104610761816i.jpg);
+    /* Cover define que a imagem de fundo será ajustada para cobrir a área do container*/
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-imagem-doe p{
+    text-shadow: 4px 4px 8px black;
+    /* para manter a responsividade utilizamos o viewport*/
+    font-size: 4vw;
+}
+.bg-imagem-doe h1{
+    text-shadow: 4px 4px 8px black;
+    /* para manter a responsividade utilizamos o viewport*/
+    font-size: 2vw;
+}
+
+.mt-70{
+    margin-top: 70px;
+
+}
+
+/* EStilo Agenda */
+#agenda th {
+    font-size: 1.5vw;
+
+}
+
+#agenda td{
+    height: 100px;
+    width: 14.29%;
+}
+
+#agenda td.bg-info{
+    color: white;
+}
+
+footer{
+    height: 50px;
+
+}
+    </style>
         <title>Miaujuda</title>
     </head>
     <body>
@@ -40,10 +113,10 @@
             <div class="collapse navbar-collapse" id="navegacao">
                 <ul class="navbar-nav ml-auto mr-5">
                     <li class="nav-item">
-                        <a href="index.html" class="nav-link active">Home</a>
+                        <a href="welcome.blade.php" class="nav-link active">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="doe.html" class="nav-link ">Doe Amor</a>
+                        <a href="doe.blade.php" class="nav-link ">Doe Amor</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
@@ -56,13 +129,13 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a href="area_aluno.html" class="nav-link">Login</a>
+                        <a href="login.blade.php" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a href="cadastro.html" class="nav-link">Cadastre-se</a>
+                        <a href="cadastro.blade.php" class="nav-link">Cadastre-se</a>
                     </li>
                     <li class="nav-item">
-                        <a href="adote.html" class="nav-link">Adote</a>
+                        <a href="adote.blade.php" class="nav-link">Adote</a>
                     </li>
     
                 </ul>
@@ -175,7 +248,6 @@
                 </div>
             </section>
         </main>
-
 
         </header>
 </body>
