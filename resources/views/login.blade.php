@@ -21,129 +21,13 @@
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
         
-    <style>
-            <style>
-        /*Redefinir padroes d ecores do nav do bootstrap*/
-.active{
-    background-color: #007bff;
-}
 
-.nav-link, .dropdown-item{
-    color: white !important;
-}
-.nav-link:hover:not(.active), .dropdown-item:hover{
-    background-color: #7952b3;
-    color: white !important;
-}
-
-.bg-imagem{
-    /* para manter a responsividade do viewport */
-    height: 48vw;
-    background-image: url(https://caes101.files.wordpress.com/2012/09/cao-gato.jpg);
-    /* Cover define que a imagem de fundo será ajustada para cobrir a área do container*/
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-imagem p{
-    text-shadow: 4px 4px 8px black;
-    /* para manter a responsividade utilizamos o viewport*/
-    font-size: 4vw;
-}
-
-.bg-imagem-doe{
-    /* para manter a responsividade do viewport */
-    height: 48vw;
-    background-image: url(https://www.diariodepernambuco.com.br/static/app/noticia_127983242361/2020/04/17/825933/20200417104610761816i.jpg);
-    /* Cover define que a imagem de fundo será ajustada para cobrir a área do container*/
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.bg-imagem-doe p{
-    text-shadow: 4px 4px 8px black;
-    /* para manter a responsividade utilizamos o viewport*/
-    font-size: 4vw;
-}
-.bg-imagem-doe h1{
-    text-shadow: 4px 4px 8px black;
-    /* para manter a responsividade utilizamos o viewport*/
-    font-size: 2vw;
-}
-
-.mt-70{
-    margin-top: 70px;
-
-}
-
-/* EStilo Agenda */
-#agenda th {
-    font-size: 1.5vw;
-
-}
-
-#agenda td{
-    height: 100px;
-    width: 14.29%;
-}
-
-#agenda td.bg-info{
-    color: white;
-}
-
-footer{
-    height: 50px;
-
-}
-    </style>
-    </style>
     
         <title>Miaujuda</title>
     </head>
     <body>
-        <!-- Header é o Cabeçalho da pagina parte de cima (menu)-->
-        <header>
-        <nav class="navbar bg-dark navbar-expand-sm navbar-dark fixed-top">
-            <!--Logo-->
-            <img class="logo" src="" alt="Miaujuda">
-             <!--Menu hambuguer-->
-            <button class="navbar-toggler" data-toggle="collapse"
-            data-target="#navegacao">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <!--Itens do menu-->
-            <div class="collapse navbar-collapse" id="navegacao">
-                <ul class="navbar-nav ml-auto mr-5">
-                    <li class="nav-item">
-                        <a href="welcome.blade.php" class="nav-link active">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="doe.blade.php" class="nav-link ">Doe Amor</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
-                            Ongs</a>
-                        <div class="dropdown-menu bg-dark">
-                            <a target="_blank" href="https://br.cellep.com" 
-                            class="dropdown-item"><i class="bi bi-file-earmark-person mr-1"></i>Cellep</a>
-                            <a target="_blank" href="https://estacaohack.fb.com" 
-                            class="dropdown-item"><i class="bi bi-facebook mr-1"></i>Estação Hack</a>
-                        </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="login.blade.php" class="nav-link">Login</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="cadastro.blade.php" class="nav-link">Cadastre-se</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="adote.blade.php" class="nav-link">Adote</a>
-                    </li>
-    
-                </ul>
-            </div> 
-        </nav>
-        </header>
+    @extends('templates.template')
+    @section('content')
 
         <main class="container">
             <div class="row">
@@ -180,5 +64,6 @@ footer{
         </div>
     </footer>
     <script src="script.js"></script>
+    @endsection  
     </body>
 </html>

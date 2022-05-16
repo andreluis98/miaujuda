@@ -39,3 +39,9 @@ Route::get('/cadastro.blade.php', function(){
 Route::get('/adote.blade.php', function(){
     return view('adote');
 });
+
+Route::get('/pets', 'App\Http\Controllers\PetsController@index');
+
+Route::get('pets-view', 'App\Http\Controllers\PetsController@exibirPets');
+
+Route::get('/pets-view/{id}', 'App\Http\Controllers\PetsController@destroy');
