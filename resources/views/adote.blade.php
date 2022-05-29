@@ -28,7 +28,34 @@
     <body>
     @extends('templates.template')
     @section('content')
+    <section>
 
+<form action="{{url('/pet/ocorrencia')}}" method="post">
+    @csrf
+    <div>
+        <p>Qual o Pet?</p>
+            <input type="text" placeholder="Gato ou Cachorro?" name="txPet" >
+    </div>
+    <div>
+        <label for="fname">Endereço que o pet se está?</label><br>
+            <input type="text" placeholder="Endereço" >
+    </div>
+    <div>
+        <p>Qual o Sexo do Pet?</p>
+
+            <input type="text" placeholder="Macho ou Femea?" name="txSx" >
+
+    </div>
+    <div>
+        <input type="text" placeholder="Observações" name="txObs">
+    </div>
+    <div>
+        <input type="submit" value="Realizar Ocorrencia"/>
+    </div>
+
+</form>
+
+</section>
     @endsection
     
 </body>

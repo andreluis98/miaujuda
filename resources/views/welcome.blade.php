@@ -56,7 +56,7 @@
                                                     Vero nisi eveniet, illo et quaerat aperiam, fugit illum aut
                                                     quia soluta voluptas? Facere iure ducimus rem accusamus qui 
                                                     magni quibusdam quae.</p>
-                          <a href="#" class="btn btn-primary">Saiba-mais</a>
+                          <a href="adote.blade.php" class="btn btn-primary">Saiba-mais</a>
                         </div>
                       </div>
                 </div>
@@ -70,7 +70,7 @@
                               adipisicing elit. Animi eius minus veniam tempore? Dicta minima,
                                iusto quis sequi tempora ratione qui cum voluptas ipsam animi 
                                reprehenderit, pariatur magni ipsa dolorem.</p>
-                          <a href="#" class="btn btn-primary">Saiba-mais</a>
+                          <a href="doe.blade.php" class="btn btn-primary">Saiba-mais</a>
                         </div>
                       </div>
                 </div>
