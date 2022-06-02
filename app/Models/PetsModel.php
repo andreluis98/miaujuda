@@ -10,4 +10,8 @@ class PetsModel extends Model
     use HasFactory;
 
     protected $table ="tbPets";
+
+    public $timestamps=false;
+    protected $fillable =['pets','sexo','Obs'];
+    protected $primaryKey = 'idPets';
 }

@@ -54,7 +54,16 @@ class PetsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $pets = new PetsModel();
+
+        $pets->pets = $request->txPet;
+        $pets->sexo = $request->txSx;
+        $pets->Obs = $request->txObs;
+
+        $pets->save();
+
+        return redirect()->action('App\Http\Controllers\PetsController@exibirPets');
+
     }
 
     /**
@@ -76,7 +85,9 @@ class PetsController extends Controller
      */
     public function edit($id)
     {
-        //
+        $pets = PetsModel::find($id);
+        $title = "Editar Pet - {$pets->pets}";
+        return view ('petsEditar', compact('title', 'pets'));
     }
 
     /**
@@ -88,7 +99,9 @@ class PetsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $pets = PetsModel::find($id);
+        $pets->update(['pets'=>$request->tPets]);
+        return redirect()->action('App\Http\Controllers\PetsController@exibirPets');
     }
 
     /**

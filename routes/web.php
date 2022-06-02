@@ -45,3 +45,9 @@ Route::get('/pets', 'App\Http\Controllers\PetsController@index');
 Route::get('pets-view', 'App\Http\Controllers\PetsController@exibirPets');
 
 Route::get('/pets-view/{id}', 'App\Http\Controllers\PetsController@destroy');
+
+Route::post('/pet/ocorrencia', 'App\Http\Controllers\PetsController@store');
+
+Route::get('/pets-editar/{id}/editar', 'App\Http\Controllers\PetsController@edit');
+
+Route::post('/pets-alterar/{id}', 'App\Http\Controllers\PetsController@update');

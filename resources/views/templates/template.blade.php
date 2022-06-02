@@ -33,10 +33,10 @@
                     <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown">
                         Ongs</a>
                     <div class="dropdown-menu bg-dark">
-                        <a target="_blank" href="https://br.cellep.com" 
-                        class="dropdown-item"><i class="bi bi-file-earmark-person mr-1"></i>Cellep</a>
-                        <a target="_blank" href="https://estacaohack.fb.com" 
-                        class="dropdown-item"><i class="bi bi-facebook mr-1"></i>Estação Hack</a>
+                        <a target="_blank" href="#" 
+                        class="dropdown-item"><i class="bi bi-file-earmark-person mr-1"></i>Miaujado</a>
+                        <a target="_blank" href="#" 
+                        class="dropdown-item"><i class="bi bi-facebook mr-1"></i>Miaujudamos</a>
                     </div>
                 </li>
                 <li class="nav-item">
@@ -46,7 +46,7 @@
                     <a href="cadastro.blade.php" class="nav-link">Cadastre-se</a>
                 </li>
                 <li class="nav-item">
-                    <a href="adote.blade.php" class="nav-link">Adote</a>
+                    <a href="adote.blade.php" class="nav-link">Realizar Ocorrencia</a>
                 </li>
 
             </ul>
